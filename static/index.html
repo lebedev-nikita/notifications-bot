@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Y87cgp Notifications</title>
+
+    <style>
+      body {
+        padding-top: 16px;
+        margin: 0;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        margin: 0 auto;
+        gap: 4px;
+      }
+      textarea {
+        min-height: 200px;
+      }
+      button {
+        height: 32px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form method="post" action="/sendMessage">
+      <textarea name="message"></textarea>
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
